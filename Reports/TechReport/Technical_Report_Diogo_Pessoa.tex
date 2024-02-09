@@ -1,0 +1,64 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{hyperref}
+\usepackage{blindtext}
+\usepackage{graphicx}
+\setlength{\oddsidemargin}{0.5cm}
+\setlength{\evensidemargin}{0.5cm}
+\setlength{\topmargin}{-1.6cm}
+\setlength{\leftmargin}{0.5cm}
+\setlength{\rightmargin}{0.5cm}
+\setlength{\textheight}{24.00cm}
+\setlength{\textwidth}{15.00cm}
+\parindent 0pt
+\parskip 5pt
+\pagestyle{plain}
+
+%% Bibliography Management
+%\usepackage[backend=biber, style=authoryear, natbib=true]{biblatex}
+%\addbibresource{references.bib} % Your bibliography file
+
+\title{Technical Report Assignment 1}
+\author{Diogo Pessoa}
+\date{07/02/2024}
+
+\newcommand{\namelistlabel}[1]{\mbox{#1}\hfil}
+\newenvironment{namelist}[1]{%1
+    \begin{list}{}
+    {
+        \let\makelabel\namelistlabel
+        \settowidth{\labelwidth}{#1}
+        \setlength{\leftmargin}{1.1\labelwidth}
+    }
+    }{%1
+    \end{list}}
+
+\begin{document}
+    \maketitle
+    \begin{namelist}{xxxxxxxxxxxx}
+        \item[\textbf{Title:}]
+        The Divvy Bike ride-sharing Exploratory Data Analysis
+        \item[\textbf{Author:}]
+        Diogo Pessoa
+        \item[\textbf{Degree:}]
+        Postgraduate in Big Data Analytics and Artificial Intelligence
+    \end{namelist}
+
+    \section*{Problem Description}
+    \label{sec:ProblemDescription}
+    \input{problem-description}
+
+    \section*{Dataset description}
+    \label{sec:dataset}
+    \input{dataset-description}
+
+    \section*{Method}\label{sec:method}
+    \input{method}
+    \section*{Exploratory Data Analysis (EDA)}\label{sec:analytical-techniques}
+    \input{exploratory-data-analysis}
+    \section{Predictive Models}\label{sec:predictive-models}
+    \input{predictive-models}
+
+    \section*{Conclusion}\label{sec:conclusion}
+    \input{conclusion}
+
+\end{document}
