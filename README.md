@@ -3,21 +3,6 @@ TechProject1
 
 ### Introduction
 
-This is a project for the course "Big Data Analytics" at the Atlantic Technological University Donegal.
-
-The Project uses the dataset made public at [Divvy Data](https://divvybikes.com/system-data). The dataset is a
-collection of data from the bike sharing scheme in Chicago. The data is available in CSV format and is split into two
-files, one for the trips and one for the stations.
-
-The goal is to make the project usable locally by loading a sample of the dataset, then using Pandas for speed and
-simplicity of the analysis. Then, use pySpark and synapse to train a model and make predictions. review performance, go
-back to feature engineering to improve performance.
-
-The project tested on `Google Collab Entrerpise`.
-
-To see a full run of the Whole project, please refer to the notebook [supervisor_bikeshare](notebooks/supervisor_bikeshare.ipynb). 
-This notebook calls all other notebooks in the correct order, and loads the images. 
-
 ### Notebooks description
 
 This project have multiple notebooks, each with a specific scope. The idea is to simplify the analysis and make it easier to follow.
@@ -25,50 +10,12 @@ All notebooks cross-reference each other, accordingly to the flow of the analysi
 
 #### Notebooks/
 
-  * [supervisor_bikeshare](notebooks/supervisor_bikeshare.ipynb) - One to rule them all!
+  * [supervisor](notebooks/supervisor.ipynb) - One to rule them all!
     * Calls notebooks in order to run the full analysis. Handy as I don't need to re-run previous steps, when I need to re-run subsets of the analysis.
-  * [data_collection.ipynb](notebooks/data_collection.ipynb) - Being mindful of resource limitations, the default call only pulls the 2023 data.
-    * Loads helper functions from helper module [divvy_bike_share_data_analysis](divvy_bike_share_data_analysis) to download trip rercords zip files and extract them to a local directory and loading into a PySpark DataFrame.
-    * [feature_engineering.ipynb](notebooks/feature_engineering.ipynb)
-      * Depends on `%run 'notebooks/data_collection.ipynb'` 
-      * calls data_collection.ipynb, then split the data further `DataFrame.sample(0.1)`. Again, being mindful of resource limitations. A full year of trip records can take a while to process.
-      * The notebook focus on feature engineering, such as creating new columns, and transforming the data to be used in the model. Removing Nulls and Duplicate rows.
-      * An important portion of this notebook is the indexing of features `sampled_df_with_added_features_indexed`. I decided for that since multiple notebooks were repeating this step.
-    * [data_exploration](notebooks/data_exploration.ipynb)
-      * Depends on `%run 'notebooks/feature_engineering.ipynb'`
-      * The notebook focus on the initial data exploration. Therefore, it converts the PySpark DataFrame to a Pandas DataFrame.
-        * ```python
-          sampled_df_with_added_features_indexed.toPandas()
-          ``
-      * The notebook is intended to be used to understand the data, visualize findings and patterns.
-    * [regression_model.ipynb](notebooks/classification_model.ipynb)
-      * Depends on `%run 'notebooks/feature_engineering.ipynb'` 
-      * The notebook focus on training a regression model using PySpark. The model is trained using the `sampled_df_with_added_features_indexed` DataFrame.
-      * I've also split the training in to contexts, working days and non-working days. I've decided for the split, due to performance issues. The model was taking too long to train(local laptop).
-      * The model is trained using the `sampled_df_with_added_features_indexed` DataFrame.
-    * [sillhouette_index_scores.ipynb](notebooks/sillhouette_score.ipynb)
-      * Depends on `%run 'notebooks/feature_engineering.ipynb'`
-      * The notebook focus on the Silhouette analysis of the dataset. The goal is to find the optimal number of clusters for the dataset.
-    * [clustering_analysis.ipynb](notebooks/clustering_analysis.ipynb)
-      * Depends on `%run 'notebooks/feature_engineering.ipynb'`
-      * `<Pending>`
 
 ### Questions
 
-* Which stations are the most used for collections?
-* Which stations are busier during certain periods of the day?
-    * During feature engineering. the day_period column will be added to the dataset to help target this question.
-        * [bike_stations.py](divvy_bike_share_data_analysis/bike_stations.py)#categorize_time_of_day(hour)
-* Which destinations are the most popular among users(by membership type)?
-* Which periods of the day are these stations most visited?
-* Which stations should be unloaded while restocking high-demand stations during peak hours?
-
-
-
 #### Using the Notebook
-  
-The notebook is intended to be used in a Jupyter environment. The notebook is divided into sections. 
-Having said that, the Notebook uses helper functions from the module [divvy_bik_share_data_analysis](divvy_bike_share_data_analysis) to simplify the notebook content.
 
 Here are a few important points:
 * Using `dotenv` to load certain environment variables, without explicity declaring sensitive information in the notebook.
@@ -83,7 +30,7 @@ Here are a few important points:
         * Example:
           ```dotenv
              IMAGES_PATH='../Reports/TechReport/images/'
-             DATA_COLLECTION_DIR='../data_collection/'
+             DATA_COLLECTION_DIR='../data/'
           ```
   * PySpark preset Schema for Divvy Trip Data:
     * The schema example is defined in the [divvy-tripdata-schema.yaml](documents/divvy-tripdata-schema-example.yaml).

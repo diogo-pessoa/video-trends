@@ -82,7 +82,8 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-
+.env
+data/
 # IPython
 profile_default/
 ipython_config.py
@@ -169,3 +170,4 @@ cython_debug/
 .DS_Store
 /out/
 /Reports/TechReport/out/
+/notebooks/notebook_archive_reference/Video_trends_reference_notebooks.ipynb
