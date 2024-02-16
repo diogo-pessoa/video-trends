@@ -171,3 +171,5 @@ cython_debug/
 /out/
 /Reports/TechReport/out/
 /notebooks/notebook_archive_reference/Video_trends_reference_notebooks.ipynb
+/notebooks/Technical_Project_II_Predictive_Analytics_Youtube_Trending_Videos_2023.ipynb
+notebooks/combined_data.csv
