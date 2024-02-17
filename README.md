@@ -10,7 +10,18 @@ All notebooks cross-reference each other, accordingly to the flow of the analysi
 
 #### Notebooks/
 
+
+
 ### References to the libraries and functions used in this project
+
+* **Feature Engineering**
+  * [PCA](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html)
+  * [DEAP](https://deap.readthedocs.io/en/master/index.html)
+    * DEAP is a novel evolutionary computation framework for rapid prototyping and testing of ideas.
+    * [overview](https://deap.readthedocs.io/en/master/overview.html)
+  * [Pandas astype('category')](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.astype.html)
+  * [scikt-optimizer](https://scikit-optimize.github.io/stable/auto_examples/sklearn-gridsearchcv-replacement.html)
+
 
 * **Stacking**
   * [Stacking Regressor](https://scikit-learn.org/stable/modules/ensemble.html#stacking)
@@ -35,5 +46,6 @@ All notebooks cross-reference each other, accordingly to the flow of the analysi
   * [mean_squared_error](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html)
   * [variance_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.explained_variance_score.html)
 
-* Referenced articles:
-  * `<pending>`
+* References:
+  * [Alibrahim, H. and Ludwig, S.A., 2021, June. Hyperparameter optimization: Comparing genetic algorithm against grid search and bayesian optimization. In 2021 IEEE Congress on Evolutionary Computation (CEC) (pp. 1551-1559). IEEE.](https://ieeexplore.ieee.org/abstract/document/9504761)
+  * [Maclin, R. and Opitz, D., 1997. An empirical evaluation of bagging and boosting. AAAI/IAAI, 1997, pp.546-551.](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=ff298c9ad0aaf574219cb9d470a0ff9ef2f8f3ce)
