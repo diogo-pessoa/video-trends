@@ -20,17 +20,17 @@ All notebooks cross-reference each other, accordingly to the flow of the analysi
     * DEAP is a novel evolutionary computation framework for rapid prototyping and testing of ideas.
     * [overview](https://deap.readthedocs.io/en/master/overview.html)
   * [Pandas astype('category')](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.astype.html)
-  * [scikt-optimizer](https://scikit-optimize.github.io/stable/auto_examples/sklearn-gridsearchcv-replacement.html)
+  * [scikit-optimizer](https://scikit-optimize.github.io/stable/auto_examples/sklearn-gridsearchcv-replacement.html)
 
 
 * **Stacking**
   * [Stacking Regressor](https://scikit-learn.org/stable/modules/ensemble.html#stacking)
-  * [KNeighborsRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html#sklearn.neighbors.KNeighborsRegressor)
+  * [KNeighbors Regressor](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html#sklearn.neighbors.KNeighborsRegressor)
 * **Boosting**
-  * [GradientBoostingRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html#sklearn.ensemble.GradientBoostingRegressor)
+  * [Gradient Boosting Regressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html#sklearn.ensemble.GradientBoostingRegressor)
 * **Bagging**
-  * [BaggingRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.BaggingRegressor.html#sklearn.ensemble.BaggingRegressor)
-  * [RandomForestRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor)
+  * [Bagging Regressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.BaggingRegressor.html#sklearn.ensemble.BaggingRegressor)
+  * [Random Forest Regressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor)
 
 
 * **Evaluation and Estimatiors**
