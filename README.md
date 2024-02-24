@@ -12,6 +12,32 @@ All notebooks cross-reference each other, accordingly to the flow of the analysi
 
 
 
+### Diagrams of Ensemble Methods used
+
+![bagging_regressor_diagram.jpg](documents%2Fimages%2Fbagging_regressor_diagram.jpg)
+![gradient_boosting_diagram.jpg](documents%2Fimages%2Fgradient_boosting_diagram.jpg)
+![voting_regressor_diagram.jpg](documents%2Fimages%2Fvoting_regressor_diagram.jpg)
+![stacking_diagram.jpg](documents%2Fimages%2Fstacking_diagram.jpg)
+
+### Feature Engineering with LassoCV 
+
+![lasso_coefficient.png](documents%2Fimages%2Flasso_coefficient.png)
+
+
+### Metrics and Evaluation Across Ensemble Methods
+
+![performance_metrics_table.png](documents%2Fimages%2Fperformance_metrics_table.png)
+
+### Final metrics Plots after Feature Engineering and Hyperparameter Optimizations
+
+
+![regressor_predictions_avg.png](documents%2Fimages%2Fregressor_predictions_avg.png)
+
+![metrics_performance_scores_bar.png](documents%2Fimages%2Fmetrics_performance_scores_bar.png)
+
+![metrics_performance_scores_line.png](documents%2Fimages%2Fmetrics_performance_scores_line.png)
+
+
 ### References to the libraries and functions used in this project
 
 * **Feature Engineering**
