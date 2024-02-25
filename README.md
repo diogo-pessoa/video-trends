@@ -4,6 +4,20 @@ TechProject - 2
 This project have multiple notebooks, each with a specific scope. The idea is to simplify the analysis and make it easier to follow.
 All notebooks cross-reference each other, accordingly to the flow of the analysis. Using magic runs, such as: `%run 'notebooks/data_collection.ipynb'`
 
+### Running this project
+
+To run this project, you will need to have the following `python 3.9.18` installed. Then, run the commands below. 
+I used Pycharm to work in this project, but you can run jupyter locally from the web browser. 
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+jupyter lab
+
+```
+
 #### Notebooks/
 
 * [supervisor.ipynb](notebooks/supervisor.ipynb)
