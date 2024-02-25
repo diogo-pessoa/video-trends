@@ -1,16 +1,29 @@
 TechProject - 2
 ------------
 
-### Introduction
-
-### Notebooks description
-
 This project have multiple notebooks, each with a specific scope. The idea is to simplify the analysis and make it easier to follow.
 All notebooks cross-reference each other, accordingly to the flow of the analysis. Using magic runs, such as: `%run 'notebooks/data_collection.ipynb'`
 
 #### Notebooks/
 
+* [supervisor.ipynb](notebooks/supervisor.ipynb)
+* [data_loader](notebooks/data_loader.ipynb)
+* [Task_2_Bagging.ipynb](notebooks/Task_2_Bagging.ipynb)
+* [Task_2_Boosting.ipynb](notebooks/Task_2_Bagging.ipynb)
+* [Task_2_Stacking.ipynb](notebooks/Task_2_Stacking.ipynb)
 
+##### Feature Engineering
+
+* [LassoCV.ipynb](notebooks/FeatureEngineering/LassoCV.ipynb)
+* [PCA.ipynb](notebooks/FeatureEngineering/PCA.ipynb)
+* [GeneticAlgorithms.ipynb](notebooks/FeatureEngineering/GeneticAlgorithms.ipynb)
+  * `Not fully implemented yet`
+
+##### Hyperparameter Tuning
+
+* [GridSearchCV.ipynb](notebooks/HyperparameterTuning/GridSearchCV.ipynb)
+* [Bayesian_optimization.ipynb](notebooks/HyperparameterTuning/Bayesian_optimization.ipynb)
+  * `Not fully implemented yet`
 
 ### Diagrams of Ensemble Methods used
 
